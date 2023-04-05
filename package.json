@@ -7,12 +7,17 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
     "test": ""
   },
   "dependencies": {
+    "fastify": "^4.15.0",
     "tsx": "^3.12.6"
   },
   "devDependencies": {
+    "@types/node": "^18.15.11",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.3"
   }
 }
