@@ -1,7 +1,8 @@
 import { app } from './app';
+import { env } from './env';
 
-const port = 5000;
-const host = '192.168.15.41';
+const port = env.PORT;
+const host = env.HOST;
 
 app
   .listen({ host, port })
