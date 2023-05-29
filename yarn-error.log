@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Wesll\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/prisma -D
+  C:\Program Files\nodejs\node.exe C:\Users\Wesll\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D @types/bcryptjs
 
 PATH: 
   C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\programas\wamp\bin\php\php8.2.0;C:\ProgramData\ComposerSetup\bin;D:\programas\PuTTY\;D:\programas\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;D:\programas\MySQL Shell 8.0\bin\;C:\Users\Wesll\AppData\Local\Microsoft\WindowsApps;C:\Users\Wesll\AppData\Roaming\npm;C:\Users\Wesll\AppData\Local\GitHubDesktop\bin;D:\programas\Microsoft VS Code\bin;D:\programas\IntelliJ IDEA Community Edition 2022.3.1\bin;D:\programas\PyCharm Community Edition 2022.3\bin;C:\Users\Wesll\AppData\Roaming\Composer\vendor\bin;C:\Users\Wesll\AppData\Local\JetBrains\Toolbox\scripts;
@@ -14,17 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fprisma: Not found
-      at params.callback [as _callback] (C:\Users\Wesll\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at self.callback (C:\Users\Wesll\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
-      at Request.emit (node:events:513:28)
-      at Request.<anonymous> (C:\Users\Wesll\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
-      at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (C:\Users\Wesll\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
-      at Object.onceWrapper (node:events:627:28)
-      at IncomingMessage.emit (node:events:525:35)
-      at endReadableNT (node:internal/streams/readable:1359:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  Error: EPERM: operation not permitted, unlink 'D:\codigos\api-solid-gym\node_modules\prisma\engines\659ef412370fa3b41cd7bf6e94587c1dfb7f67e7\query_engine-windows.dll.node'
 
 npm manifest: 
   {
