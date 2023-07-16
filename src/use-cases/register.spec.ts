@@ -2,7 +2,7 @@ import { PrismaUsersRepository } from '@/repositories/prisma/prisma-users-reposi
 import { beforeEach, describe, expect, it, test } from 'vitest';
 import { RegisterUseCase } from './register';
 import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository';
-import { UsersAlreadyExistisError } from './erros/user-already-exists-error';
+import { UsersAlreadyExistisError } from './errors/user-already-exists-error';
 import { compare } from 'bcryptjs';
 
 let usersRepository: InMemoryUsersRepository;
