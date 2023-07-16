@@ -3,9 +3,21 @@ import { CheckInsRepository } from '../check-ins-repository';
 import { randomUUID } from 'crypto';
 
 export class InMemoryCheckInsRepository implements CheckInsRepository {
-  public itens: CheckIn[] = [];
+  public items: CheckIn[] = [];
 
-  async create(data: Prisma.CheckInUncheckedCreateInput): Promise<CheckIn> {
+  async findByUserIdOnDate(userId: string, date: Date) {
+    const checkInOnSameDate = this.items.find(
+      (checkIn) => checkIn.user_id === userId
+    );
+
+    if (!checkInOnSameDate) {
+      return null;
+    }
+
+    return checkInOnSameDate;
+  }
+
+  async create(data: Prisma.CheckInUncheckedCreateInput) {
     const checkIn = {
       id: randomUUID(),
       user_id: data.user_id,
@@ -14,7 +26,7 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
       created_at: new Date(),
     };
 
-    this.itens.push(checkIn);
+    this.items.push(checkIn);
 
     return checkIn;
   }
