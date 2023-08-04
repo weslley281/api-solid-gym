@@ -1,5 +1,5 @@
 import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-check-ins-repository';
-import { CheckInUseCase } from './checkin';
+import { CheckInUseCase } from './check-in';
 import { afterEach, describe, vi } from 'vitest';
 import { beforeEach, expect, it } from 'vitest';
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository';
