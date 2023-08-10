@@ -8,7 +8,7 @@ export async function searsh(request: FastifyRequest, response: FastifyReply) {
     page: z.coerce.number().min(1).default(1),
   });
 
-  const { query, page } = searshGymsQuerySchema.parse(request.body);
+  const { query, page } = searshGymsQuerySchema.parse(request.query);
 
   const searshGymsUseCase = makeSearchGymsUseCase();
 
