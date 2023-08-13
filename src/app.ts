@@ -1,4 +1,5 @@
 import fastify from 'fastify';
+import cookie from '@fastify/cookie';
 import { ZodError } from 'zod';
 import { env } from './env';
 import fastifyJwt from '@fastify/jwt';
@@ -8,7 +9,7 @@ import { checkInsRoutes } from './http/controllers/check-ins/routes';
 
 export const app = fastify();
 
-app.register(fastifyJwt, { secret: env.JWT_SECRET });
+app.register(fastifyJwt, { secret: env.JWT_SECRET, sign: { expiresIn: '1d' } });
 
 app.register(usersRoutes);
 app.register(gymsRoutes);
