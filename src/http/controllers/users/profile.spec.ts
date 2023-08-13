@@ -1,5 +1,5 @@
 import { app } from '@/app';
-import { createAndAthenticateUser } from '@/utils/test/create-and-authenticate-user';
+import { createAndAuthenticateUser } from '@/utils/test/create-and-authenticate-user';
 import request from 'supertest';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
@@ -13,7 +13,7 @@ describe('Profile (e2e)', () => {
   });
 
   it('Shoud be able to get user profile', async () => {
-    const { token } = await createAndAthenticateUser(app);
+    const { token } = await createAndAuthenticateUser(app);
 
     const profileResponse = await request(app.server)
       .get('/me')
