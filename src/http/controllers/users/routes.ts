@@ -5,6 +5,7 @@ import { verifyJwt } from '@/http/middlewares/verify-jwt';
 import { authenticate } from './authenticate';
 import { profile } from './profile';
 import { register } from './register';
+import { refresh } from './refresh';
 
 export async function usersRoutes(app: FastifyInstance) {
   app.post('/users', register);
@@ -12,4 +13,5 @@ export async function usersRoutes(app: FastifyInstance) {
 
   /** Authenticated */
   app.get('/me', { onRequest: [verifyJwt] }, profile);
+  app.patch('/token/refresh', refresh);
 }

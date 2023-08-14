@@ -16,7 +16,9 @@
     "pretest:e2e": "run-s test:create-prisma-environment test:install-prisma-environment",
     "test:e2e": "vitest run --dir src/http",
     "test:coverage": "vitest run --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "up": "docker compose up -d",
+    "down": "docker compose stop"
   },
   "dependencies": {
     "@fastify/cookie": "^9.0.4",
