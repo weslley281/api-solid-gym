@@ -2366,9 +2366,9 @@
     "ts-interface-checker" "^0.1.9"
 
 "superagent@^8.0.5":
-  "integrity" "sha512-4C7Bh5pyHTvU33KpZgwrNKh/VQnvgtCSqPRfJAUdmrtSYePVzVg4E4OzsrbkhJj9O7SO6Bnv75K/F8XVZT8YHA=="
-  "resolved" "https://registry.npmjs.org/superagent/-/superagent-8.0.9.tgz"
-  "version" "8.0.9"
+  "integrity" "sha512-6WTxW1EB6yCxV5VFOIPQruWGHqc3yI7hEmZK6h+pyk69Lk/Ut7rLUY6W/ONF2MjBuGjvmMiIpsrVJ2vjrHlslA=="
+  "resolved" "https://registry.npmjs.org/superagent/-/superagent-8.1.2.tgz"
+  "version" "8.1.2"
   dependencies:
     "component-emitter" "^1.3.0"
     "cookiejar" "^2.1.4"
